@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: PhotoTeam
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ISA´S MEMORIES</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.photo_category').showFeatureText();
+    $(".thumbs a").click(function () {
+        var imgpath = $(this).attr("href");
+        var imgalt = $(this).attr("alt");
+        $("#placeholder").attr({
+            src: imgpath,
+            alt: imgalt
+        });
+        return false;
+    });
+});
+$.fn.showFeatureText = function () {
+    return this.each(function () {
+        var box = $(this);
+        var text = $('span', this);
+        text.css({
+            display: 'block',
+            position: 'absolute',
+            top: '0',
+            left: '0'
+        }).hide();
+        box.hover(function () {
+            text.slideDown("fast");
+        }, function () {
+            text.slideUp("fast");
+        });
+    });
+}
+</script>
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="index.html">2024 Friends Version</a></h1>
+      <p></p>
+    </div>
+    <div class="fl_right">
+      <form action="#" method="post" id="search">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+          <input type="image" id="go" src="layout/images/search.gif" alt="Search" />
+        </fieldset>
+      </form>
+      <ul id="topnav" class="clear">
+        <li><a href="pages/gallery.html">Gallery</a></li>
+        <li><a href="pages/portfolio.html">Juli
+        </a></li>
+        <li><a href="#">Juan</a>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/full-width.html">Vale</a></li>
+        <li><a href="pages/style-demo.html">Jose Lu</a></li>
+        <li class="active last"><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="homepage" class="clear">
+    <p><img id="placeholder" src="images/demo/All.jpg.jpeg" alt="" /></p>
+    <div class="fl_right">
+      <h2>MEMORIES</h2>
+      <ul class="thumbs">
+        <li><a href="images/demo/1.gif"><img src="images/demo/Pulgui.jpeg" alt="" /></a></li>
+        <li><a href="images/demo/2.gif"><img src="images/demo/carops.jpeg" alt="" /></a></li>
+        <li><a href="images/demo/3.gif"><img src="images/demo/pipe.jpeg" alt="" /></a></li>
+        <li class="last"><a href="images/demo/4.gif"><img src="images/demo/juli.jpeg" alt="" /></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="container" class="clear"> 
+    <!-- ####################################################################################################### -->
+    <div id="hpage_services" class="clear">
+      <ul>
+        <li class="photo_category"><span>Photo Category 1</span><a href="#"><img src="images/demo/Jomi.jpg.jpeg" alt=""  width="290" height="120" /></a></li>
+        <li class="photo_category"><span>Photo Category 2</span><a href="#"><img src="images/demo/xime.jpeg" alt="" width="290" height="120"/></a></li>
+        <li class="photo_category last"><span>Photo Category 3</span><a href="#"><img src="images/demo/juan.jpeg" alt="" width="290" height="120" /></a></li>
+      </ul>
+    </div>
+    <div id="hpage_info" class="clear">
+      <div class="fl_left">
+        <h2 class="title">No hay amor mas grande, que el que da la vida por sus amigos</h2>
+        <p> Los amo mucho a todos, esta es la gran prueba. <3</p>
+      </div>
+      <div class="fl_right">
+        <h2 class="title">Mas sobre ellos</h2>
+        <ul>
+          <li class="clear">
+            <div class="imgl"><img src="images/demo/sofilinda.jpeg" alt="" width="200" height="250" /></div>
+            <div class="teamember">
+              <p class="name">Sofi Linda</p>
+              <p>A sofi la conozco desde que yo estaba en jardin, ella ha sido parte de mi vida mucho tiempo y le agradezco infinitas cosas. Sofi este año se gradua y si definitivamente la voy a extrañar con mi alama pero me pone muy orgullosa que cumpla una meta mas en su vida.
+                Te quiero mucho churca linda!!!</p>
+              <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+            </div>
+          </li>
+          <li class="clear last">
+            <div class="imgl"><img src="images/demo/val.jpeg" alt="" width="250" height="200"/></div>
+            <div class="Vale">
+              <p class="name">Vale</p>
+              <p>Vale es una de mis amigas más cercanas, ella ha estado para mi este año y me da muy buenos consejos, espero que sigas siendo amigas hasta viejitas y espero que ella y todos mis amigos lleguen muy lejos. Vale tiene mucho por demostrar y tiene mucho que enseñarle al mundo.
+                Te amo millones nena linda <3
+              </p>
+              <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ####################################################################################################### --> 
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="footer">
+    <div class="verticaline clear">
+      <div class="box size1">
+        <h2>Sigan viendo en las siguientes paginas!!!</h2>
+        <p id="rss"><a href="#"><img src="layout/images/rss.gif" alt="" /></a></p>
+      </div>
+      <div class="box size2">
+        <address>
+        <strong class="title">Isa´s friends</strong><br />
+        Isa´s friends<br />
+        Bog - Col 2024<br />
+        <3
+        
+          <li><strong class="title">Tel:</strong><br />
+            +57 320 8121 864</li>
+          <li><strong class="title">Email:</strong><br />
+            <a href="#">jisa62078@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="box size3">
+        <ul>
+          <li><span>Instagram:</span> <a href="#">@ isaa_j_</a></li>
+        </ul>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Suacribete a mis bobadas!!!:</legend>
+            <input type="text" id="newsletter" value="Enter Email Here&hellip;" onfocus="this.value=(this.value=='Enter Email Here&hellip;')? '' : this.value ;" />
+            <input type="image" id="subscribe" src="layout/images/submit.gif" alt="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </div>
+</div>
+</body>
+</html>
